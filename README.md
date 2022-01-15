@@ -23,7 +23,7 @@ C:\conda --version
 conda 4.10.3
 ```
 
-The environments supported that I will consider is **Python 3.7**, **Keras 2.4.3** and **TensorFlow 2.4.0**, let us create the environment, go to you command promt terminal and type the following:
+The environments supported that I will consider is **Python 3.7**, let us create the environment, go to you command promt terminal and type the following:
 
 ```
 conda create -n detector python==3.7.10
@@ -41,7 +41,7 @@ Proceed ([y]/n)? y
 python -m ipykernel install --user --name detector --display-name "Python (Object Detector)"
 ```
 
-Then we install the correct versions of the the **Tensorflow**, and **Numpy** and **Keras**
+Then we install the correct versions of **Numpy** and **OpenCV**
 
 we create a file called **requirements.txt**
 
@@ -60,14 +60,19 @@ nano  requirements.txt
 and you paste the following lines
 
 ```
-Keras==2.4.3
-keras-resnet==0.2.0
 numpy==1.19.3
 opencv-python==3.4.2.17
+Pillow==9.0.0
+```
+
+Optionally, if you want to use this enviroment to develop additional neural neural network you can install Keras and Tensorflow
+
+```
+Keras==2.4.3
+keras-resnet==0.2.0
 tensorflow==2.4.0
 tensorflow-estimator==2.4.0
 tensorflow-gpu==2.4.0
-Pillow==9.0.0
 ```
 
 and then we return back to the terminal and install them
