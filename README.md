@@ -213,7 +213,7 @@ main()
 
 you can stop with simple press q
 
-for example you want to identiy a Youtube video, of one beutiful girl
+for example you want to identiy a Youtube video, of one beautiful girl
 
 
 
